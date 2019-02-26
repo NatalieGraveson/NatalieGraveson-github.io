@@ -1,7 +1,15 @@
 .special {
-  height:100vh
+  height:100vh;
+  position: relative;
 }
 
+.my-name {
+  position: absolute;
+  right: 14vw;
+  top: 71vh;
+  color: white;
+  z-index: 2
+}
 
 .footer {
   margin-bottom: 264px;
@@ -12,6 +20,13 @@
 
 } 
 
+.bars {
+  position: fixed;
+  top: 1vh;
+  left: 1vh;
+  z-index: 1;
+}
+
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -19,7 +34,7 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #111; /*Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -64,7 +79,7 @@ color:white;
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .earth-demo {
@@ -137,6 +152,11 @@ body {
   to {
     transform: rotateZ(360deg);
   }
+}
+
+i {
+  padding-left: 20px;
+    padding-top: 20px;
 }
 
 
