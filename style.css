@@ -5,21 +5,23 @@
 
 .my-name {
   position: absolute;
-  left: 6vw;
-  top: 71vh;
+  left: 21vw;
+  top: 82vh;
   color: white;
   z-index: 2;
   text-align: center;
+  font-size: 82px;
 }
 .my-land {
  position: absolute;
-  left: 43vw;
-  top: 17vh;
+  left: 667px;
+  top: 3vh;
   color: white;
   z-index: 2;
   text-align: center;
   animation: opacity 2s ease-in-out infinite;
     opacity: 1;
+    font-size: 91px;
 }
 
 @keyframes opacity {
@@ -37,12 +39,14 @@
 }
 
 
+
+
 .footer {
   margin-bottom: 264px;
 }
 .main {
   margin-bottom: 659px;
-      margin-top: 932px;
+  margin-top: 34px;
 
 } 
 
@@ -98,9 +102,11 @@ color:white;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 400px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  .my-land {top: 16vh; left:15vw;font-size: 40px;}
+  .my-name {left: -1vw; top:71vh; font-size: 39px;}
 }
 
 body {
