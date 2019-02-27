@@ -5,11 +5,37 @@
 
 .my-name {
   position: absolute;
-  right: 14vw;
+  left: 6vw;
   top: 71vh;
   color: white;
-  z-index: 2
+  z-index: 2;
+  text-align: center;
 }
+.my-land {
+ position: absolute;
+  left: 43vw;
+  top: 17vh;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  animation: opacity 2s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .footer {
   margin-bottom: 264px;
@@ -31,7 +57,7 @@
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 5; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /*Black */
